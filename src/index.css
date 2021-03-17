@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: 1 999;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: Quicksand; 
+}
+
+.nodisp {
+  display: none;
+}
+
