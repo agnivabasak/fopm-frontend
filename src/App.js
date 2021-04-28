@@ -1,5 +1,8 @@
 import React from "react";
-import LandingScreen from "./screens/LandingScreen/LandingScreen"; 
+import LandingScreen from "./screens/LandingScreen/LandingScreen";
+import Dashboard from "./screens/Dashboard/Dashboard";
+import OrgDashboard from "./screens/OrgDashboard/OrgDashboard";
+import ActivityStatus from "./screens/ActivityStatus/ActivityStatus";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const AppRouter = () => {
@@ -8,6 +11,9 @@ const AppRouter = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={LandingScreen} />
+          <Route exact path="/Dashboard" component={Dashboard} />
+          <Route exact path="/OrgDashboard" component={OrgDashboard} />
+          <Route exact path="/ActivityStatus" component={ActivityStatus} />
         </Switch>
       </BrowserRouter>
     </div>

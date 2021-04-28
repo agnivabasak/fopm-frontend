@@ -1,0 +1,43 @@
+.CardComponent__container {
+   width : 23rem;
+   height : 7rem;
+   cursor: pointer;
+}
+.CardComponent__container:hover {
+    background-color: #F9F9F9;
+}
+.CardComponent__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.CardComponent__title {
+    font-size: 1.1rem;
+    font-weight: 660;
+}
+.CardComponent__subtitle {
+    font-size: 0.92rem;
+}
+.CardComponent__chevron {
+    width : 22px;
+    height : auto;
+}
+
+@media screen and (max-width : 460px) {
+    .CardComponent__container {
+        width : 18rem;
+    }
+    .CardComponent__title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 325px) {
+    .CardComponent__container {
+        width : 15rem;
+    }
+    .CardComponent__title {
+        font-size: 0.95rem;
+    }
+}

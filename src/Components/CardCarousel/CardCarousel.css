@@ -1,0 +1,10 @@
+.CardCarousel__card {
+    margin-bottom: 13px;
+}
+.CardCarousel__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    padding-bottom: 55px;
+}

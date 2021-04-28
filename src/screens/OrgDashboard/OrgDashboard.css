@@ -1,4 +1,4 @@
-#Dashboard__container {
+#OrgDashboard__container {
     padding : 0;
     margin : 0;
     margin-top: 60px;
@@ -7,21 +7,21 @@
     justify-content: space-between;
 }
 
-#Dashboard__title {
+#OrgDashboard__title {
     text-align: center;
     margin-top: 45px;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-#Dashboard__noorg {
+#OrgDashboard__noorg {
     text-align: center;
     margin-top: 28px;
     font-size: 1.2rem;
 }
 
 @media screen and (max-width : 460px) {
-    #Dashboard__title {
+    #OrgDashboard__title {
         font-size: 1.3rem;
     }
 }
