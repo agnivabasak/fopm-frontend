@@ -1,0 +1,53 @@
+#EmployeeReport__container {
+    padding : 0;
+    margin : 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#EmployeeReport__title {
+    text-align: center;
+    margin-top: 42px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#EmployeeReport__subtitle {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#EmployeeReport__table {
+    width : 90vw;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#EmployeeReport__table tr:nth-child(1) {
+    background-color: #F4F5F7;
+    color : #582E90;
+}
+
+#EmployeeReport__table td, #EmployeeReport__table th {
+    padding: 10px 10px;
+    border: 1px solid #D4D4D4;
+}
+#EmployeeReport__btngroup {
+    max-width: 120vw;
+    margin : 0;
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#EmployeeReport__btngroup Button {
+    margin: 0px 15px;
+    background-color: #582E90;
+    border: 0;
+  }
