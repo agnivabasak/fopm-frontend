@@ -6,7 +6,12 @@ import PropTypes from "prop-types";
 
 export default function CardComponent(props) {
   return (
-    <Card className="CardComponent__container">
+    <Card
+      onClick={() => {
+        window.location.href = props.forwardLink;
+      }}
+      className="CardComponent__container"
+    >
       <Card.Body className="CardComponent__body">
         <div className="CardComponent__text">
           <Card.Title className="CardComponent__title">
@@ -25,4 +30,5 @@ export default function CardComponent(props) {
 CardComponent.propTypes = {
   title: PropTypes.string.isRequired,
   strength: PropTypes.number.isRequired,
+  forwardLink: PropTypes.string.isRequired,
 };

@@ -164,7 +164,14 @@ export default function EmployeeReport() {
         })}
       </table>
       <div id="EmployeeReport__btngroup">
-        <Button variant="primary">Go Back</Button>
+        <Button
+          variant="primary"
+          onClick={() => {
+            window.location.href = "/ProjectDashboard";
+          }}
+        >
+          Go Back
+        </Button>
         <ExcelFile element={<Button variant="primary">Generate Excel</Button>}>
           <ExcelSheet
             data={EmployeeAnalysisData}

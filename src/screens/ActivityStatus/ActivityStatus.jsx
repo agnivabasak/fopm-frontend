@@ -7,6 +7,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import fopm_logo from "../../assets/imgs/logo.svg";
 import Board, { moveCard } from "@lourenci/react-kanban";
 import "@lourenci/react-kanban/dist/styles.css";
+import PropTypes from "prop-types";
 
 function ControlledBoard() {
   const board = {
@@ -14,22 +15,16 @@ function ControlledBoard() {
       {
         id: 1,
         title: "Backlog",
-        cards: [
-          {
-            id: 1,
-            title: "Add card",
-            description: "Add capability to add a card in a column",
-          },
-        ],
+        cards: [],
       },
       {
         id: 2,
         title: "Assigned",
         cards: [
           {
-            id: 2,
-            title: "Drag-n-drop support",
-            description: "Move a card between the columns",
+            id: 5,
+            title: "Test Phase 1 Development",
+            description: "Test the phase 1 product made",
           },
         ],
       },
@@ -39,8 +34,14 @@ function ControlledBoard() {
         cards: [
           {
             id: 3,
-            title: "Drag-n-drop support",
-            description: "Move a card between the columns",
+            title: "Determine System Reqs",
+            description:
+              "Let the dev and design team define the system requirements",
+          },
+          {
+            id: 4,
+            title: "Start Phase 1 Development",
+            description: "Make design and develop phase 1 of product",
           },
         ],
       },
@@ -49,9 +50,14 @@ function ControlledBoard() {
         title: "Completed",
         cards: [
           {
-            id: 4,
-            title: "Drag-n-drop support",
-            description: "Move a card between the columns",
+            id: 1,
+            title: "Gather Project Requirements",
+            description: "Gather req of proj and make SRS document",
+          },
+          {
+            id: 2,
+            title: "Gather Dev and Dsgn Team",
+            description: "based on req gather a suitable dev adn design team",
           },
         ],
       },
@@ -71,7 +77,7 @@ function ControlledBoard() {
   );
 }
 
-export default function ActivityStatus() {
+export default function ActivityStatus({ setComp }) {
   return (
     <Container fluid id="ActivityStatus__container">
       <Navbar className="Common__navbar" bg="light" expand="lg">
@@ -89,9 +95,15 @@ export default function ActivityStatus() {
       </h4>
       <ControlledBoard />
       <div className="Common__footerbtns">
-        <Button variant="primary">Go Back</Button>
+        <Button variant="primary" onClick={() => setComp(0)}>
+          Go Back
+        </Button>
         <Button variant="primary">Save Changes</Button>
       </div>
     </Container>
   );
 }
+
+ActivityStatus.propTypes = {
+  setComp: PropTypes.func.isRequired,
+};

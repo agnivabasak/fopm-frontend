@@ -19,7 +19,8 @@ export default function LandingScreen() {
     const [confirmPass,setConfirmPass] = useState("");*/
 
   function submit() {
-    console.log("something");
+    console.log("submitted!");
+    window.location.href = "/Dashboard";
   }
 
   return (
@@ -75,7 +76,7 @@ export default function LandingScreen() {
                   />
                 </InputGroup>
               </Form.Group>
-              <Button variant="primary" type="submit" onClick={() => submit()}>
+              <Button variant="primary" onClick={() => submit()}>
                 Submit
               </Button>
             </Form>

@@ -37,7 +37,7 @@ export default function LandingScreen() {
           You haven’t created or joined any project yet.
         </p>
       ) : (
-        <CardCarousel orgs={orgs} />
+        <CardCarousel forwardLink="/ProjectDashboard" orgs={orgs} />
       )}
       <div className="Common__footerbtns">
         <Button variant="primary">See Invitations</Button>

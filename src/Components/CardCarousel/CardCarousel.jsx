@@ -10,7 +10,11 @@ export default function CardCarousel(props) {
       {props.orgs.map((x) => {
         return (
           <div className="CardCarousel__card" key={x.orgId}>
-            <CardComponent title={x.orgName} strength={x.strength} />
+            <CardComponent
+              forwardLink={props.forwardLink}
+              title={x.orgName}
+              strength={x.strength}
+            />
           </div>
         );
       })}
@@ -20,4 +24,5 @@ export default function CardCarousel(props) {
 
 CardCarousel.propTypes = {
   orgs: PropTypes.array.isRequired,
+  forwardLink: PropTypes.string.isRequired,
 };
