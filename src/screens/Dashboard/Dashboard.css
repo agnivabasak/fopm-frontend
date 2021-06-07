@@ -20,6 +20,54 @@
     font-size: 1.2rem;
 }
 
+#Dashboard__createorg-modal{
+    background-color : #FFFFFF;
+    height : 70%;
+    width : 460px;
+    border-radius : 12px;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Dashboard__createorg-modal h2 {
+    font-size: 1.2rem;
+    width : 100%;
+    text-align: center;
+    padding  :10px 0;
+    font-weight: 500;
+    border-bottom: 2px solid #B2B2B2;
+}
+
+#Dashboard__createorg-modalinfo {
+    display: flex;
+    flex-direction : column;
+    width  :100%;
+    align-items: center;
+}
+
+#Dashboard__createorg-modalinfo input {
+    margin-bottom: 20px;
+}
+
+#Dashboard__createorg-modalinfo input , #Dashboard__createorg-modalinfo textarea {
+    width : 80%;
+    padding : 8px 10px;
+}
+#Dashboard__createorg-modalinfo textarea {
+    resize : none;
+}
+
+#Dashboard__createorg-modal h3 {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+    cursor : pointer;
+    color : #492678;
+}
+
+
+
 @media screen and (max-width : 460px) {
     #Dashboard__title {
         font-size: 1.3rem;
