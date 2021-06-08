@@ -24,12 +24,7 @@ export default function LandingScreen() {
   const [open, setOpen] = useState(false);
   const [newOrgName, setNewOrgName] = useState("");
   const [newOrgDesc, setNewOrgDesc] = useState("");
-  const classes = useStyles();
-  const handleClose = () => {
-    setOpen(false);
-  };
-  //example data for now
-  const orgs = [
+  const [orgs, setOrgs] = useState([
     {
       orgName: "The Software Engineering Organization",
       orgId: 1,
@@ -86,7 +81,12 @@ export default function LandingScreen() {
       orgId: 1,
       strength: 23,
     },
-  ];
+  ]);
+  const classes = useStyles();
+  const handleClose = () => {
+    setOpen(false);
+  };
+  //example data for now
   return (
     <Container fluid id="Dashboard__container">
       <Navbar className="Common__navbar" bg="light" expand="lg">
@@ -166,6 +166,10 @@ export default function LandingScreen() {
                     .then((resp) => {
                       console.log(resp);
                       toastDark("Organization successfully created!");
+                      setOrgs([
+                        ...orgs,
+                        { orgName: newOrgName, orgId: 100, strength: 1 },
+                      ]);
                       setNewOrgName("");
                       setNewOrgDesc("");
                       setOpen(false);
