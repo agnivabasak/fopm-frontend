@@ -28,7 +28,7 @@ The link to the backend repo : https://github.com/aryanshridhar/FOPM-Backend
 ## To Contribute to the project
 
 -   Clone the repo.
-    `git clone https://github.com/IEEE-VIT/Palette-Frontend-21.git`
+    `git clone https://github.com/agnivabasak/fopm-frontend.git`
 -   Checkout to a new branch.
     `git checkout -b my-amazing-feature`
 -   Make some amazing changes.
